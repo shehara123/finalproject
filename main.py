@@ -7,11 +7,11 @@ sclar = pickle.load(open('stand_scale','rb'))
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return "Hello world"
+#@app.route('/')
+#def index():
+    #return "Hello world"
 
-@app.route('/predict',methods=['POST'])
+@app.route('/',methods=['POST'])
 def predict():
     relative_velocity = request.form.get('relative_velocity')
     miss_distance = request.form.get('miss_distance')
