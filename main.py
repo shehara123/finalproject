@@ -7,9 +7,9 @@ import numpy as np
 
 app = Flask(__name__)
 
-# @app.route('/')
-# def index():
-#     return "Hello world"
+ @app.route('/')
+ def index():
+    return "Hello world"
 
 # @app.route('/predict',methods=['POST'])
 # def predict():
